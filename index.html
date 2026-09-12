@@ -96,7 +96,33 @@
                                     <p> Colocar algo relacionado a tecnologia</p>
 
                                 </article>
+        <div class="upload-container">
+    <h2>📊 Analisador de Notas</h2>
 
+    <p>Envie o PDF com as notas dos alunos</p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+
+        <label for="arquivo" class="upload-area">
+            📄
+            <span>Selecione o arquivo PDF</span>
+            <small>Somente arquivos PDF</small>
+        </label>
+
+        <input
+            type="file"
+            id="arquivo"
+            name="arquivo"
+            accept=".pdf"
+            required
+        >
+
+        <button type="submit">
+            🔍 Analisar notas
+        </button>
+
+    </form>
+    </div>
                                     <article>
 
                                         <h2><p>Meu segundo post</h2></p>
